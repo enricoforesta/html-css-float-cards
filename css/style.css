@@ -7,25 +7,36 @@
 body{
     font-family: 'Fredoka', sans-serif;
 }
+h2{
+    font-size: 16px;
+}
 
 .contenitore{
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
 }
+
+.contenitore::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .foto{
 display: block;
 float: left;
 width: 100px;
+height: 100px;
 }
 
 
 .box{
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 30px);
     height: 100px;
     border: 1px solid black;
     float: left;
-    margin:20px;
+    margin:15px;
     background-color: black;
     color: white;
     text-align: start;
@@ -34,6 +45,7 @@ width: 100px;
 .foto img{
     width: 100px;
 }
+
 .box::after{
     content: '';
     display: block;
@@ -44,4 +56,12 @@ width: 100px;
     padding: 10px;
     display: block;
     float: left;
+    width: calc(100% - 100px);
+    line-height: 27px;
+}
+
+a{
+    color: #0093e7;
+    text-decoration: none;
+    font-style: italic;
 }
