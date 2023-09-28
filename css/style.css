@@ -1,33 +1,42 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* /RESET */
 
+/* FONT */
 body{
     font-family: 'Fredoka', sans-serif;
+}
+h1{
+   color: #e53170;
+   font-size: 40px;
+   font-weight: 900;
+   margin: 30px;
 }
 h2{
     font-size: 16px;
 }
+p{
+    margin: 40px;
+}
+
+a{
+    color: #0093e7;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* /FONT */
+
+/* CONTENITORI */
 
 .contenitore{
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
-}
-
-.contenitore::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.foto{
-display: block;
-float: left;
-width: 100px;
-height: 100px;
 }
 
 
@@ -40,16 +49,21 @@ height: 100px;
     background-color: black;
     color: white;
     text-align: start;
+    line-height: 27px;
+}
+
+/* /CONTENITORI */
+
+/* FOTO E PRESENTAZIONE */
+.foto{
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
 }
 
 .foto img{
     width: 100px;
-}
-
-.box::after{
-    content: '';
-    display: block;
-    clear: both;
 }
 
 .descrizione{
@@ -58,9 +72,4 @@ height: 100px;
     float: left;
     width: calc(100% - 100px);
 }
-
-a{
-    color: #0093e7;
-    text-decoration: none;
-    font-style: italic;
-}
+/* /FOTO E PRESENTAZIONE */
