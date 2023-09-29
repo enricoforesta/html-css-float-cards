@@ -57,19 +57,17 @@ a{
 
 /* FOTO E PRESENTAZIONE */
 .foto{
-    display: block;
     float: left;
     width: 100px;
-    height: 100px;
 }
 
 .foto img{
-    width: 100px;
+    width: 100%;
+    display: block;
 }
 
 .descrizione{
     padding: 10px;
-    display: block;
     float: left;
     width: calc(100% - 100px);
 }
